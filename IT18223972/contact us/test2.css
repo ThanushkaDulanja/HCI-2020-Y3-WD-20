@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #025226;
+  color: rgb(255, 255, 255);
+  padding: 14px 40px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 9px;
+  width: 430px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+
+.wrapper .btn input[type=submit]:hover {
+    background-color: #6c6c7e;
+ }
+
+.body
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  /*background: url(car-1835506_1920.jpg);*/
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    background: rgb(12, 42, 99);
+}
+.input
+{
+    height: 150px;
+    width: 200px;
+}
+
+.form-control
+{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: rgb(25, 1, 241);
+    font-size: 18px;
+    margin-bottom: 16px;
+    padding-bottom: 20px;
+}
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+ /* background-color: #f3f6f7;*/
+  background: rgba(155, 144, 144, 0.5);
+  padding: 40px;
+  width: 500px;
+  height:650px;
+  font-weight: bold;
+  
+  
+}
+
+.backgrnd {
+    /*overflow: auto;*/
+    background-image: url(car-1835506_1920.jpg);
+    height: 700px;
+    width: 1400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.wrapper
+{
+    position: absolute;
+    left: 23%;
+    padding: 25px;
+}
+/* stop message box re size*/
+.wrapper textarea
+{
+    resize: none;
+}
+/* Contact us title in the form*/
+.wrapper h1{
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: xx-large;
+    color: rgb(5, 5, 5);
+}

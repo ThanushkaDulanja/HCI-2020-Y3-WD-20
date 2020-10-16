@@ -1,0 +1,87 @@
+
+<!-- Name: T.D. Balasooriya -->
+<!-- Reg. No: IT18212150 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class='loginbox'>
+        <img src="images/avatar.png" alt="avatar" class='user'>
+        <h1>Login</h1>
+        <form>
+            <p><i class="fa fa-user" aria-hidden="true"></i>User Email</p>
+            <input type="text" name="username" placeholder="Enter Email / Mobile Number" id="username">
+            <p><i class="fa fa-key" aria-hidden="true"></i>Password</p>
+            <input type="password" name="password" placeholder="Enter Password" id="password">
+            <span class="eye" onclick="iconShowHide();">
+                <i id="enable" class="fa fa-eye" aria-hidden="true"></i>
+                <i id="disable" class="fa fa-eye-slash" aria-hidden="true"></i>
+            </span>
+            <input type="button"name="loginbtn" value="Login" onclick="validation()">
+            <a href="#">Forgotton Password?</a> <br><br>
+            <form>
+                <input type="submit" name="registersbt" value="Register">
+            </form>
+        </form>
+    </div>
+    <script>
+        function iconShowHide(){
+            var x = document.getElementById("password");
+            var y = document.getElementById("enable");
+            var z = document.getElementById("disable");
+
+            if(x.type === 'password'){
+                x.type = "text";
+                y.style.display ="block";
+                z.style.display = "none";
+            }
+            else{
+                x.type = "password";
+                y.style.display ="none";
+                z.style.display = "block";
+            }
+        }
+
+        function validation(){
+            var user = 'dulanja@gmail.com';
+            var pass = '123456789'
+
+            var userName = document.getElementById("username").value;
+            var userPass = document.getElementById("password").value;
+
+            if((user == userName) && (pass ==userPass)){
+                swal({
+                    title: "Login Successful!",
+                    text: "Thank You!",
+                    icon: "success",
+                });
+            }
+            else if((userName.length <= 0 ) && (userPass.length <= 0)){
+                swal({
+                    title: "Login Failed!",
+                    text: "Username & Password not Filled!",
+                    icon: "info",
+                });
+            }
+            else {
+                swal({
+                    title: "Login Failed!",
+                    text: "Username & Password Incorrect! Please Try Again!",
+                    icon: "error",
+                })
+            }
+        }
+    </script>
+
+    <div id="particles-js"></div>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

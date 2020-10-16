@@ -1,0 +1,191 @@
+
+<!-- Name: T.D. Balasooriya -->
+<!-- Reg. No: IT18212150 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="footer.css">
+    
+</head>
+<body>
+
+    <!--This is header-->
+    <header>
+        <img class="logo" src ="images/logo.png" alt="loading Logo.." href="#"/>
+
+        <div class="headDetails">
+        <h1>MGBD Parts & Services </h1>
+        <a href="login.html"> <button class="button1">Login</button></a>
+       <a href="register.html"> <button class="button2">Sign up</button></a>
+        </div>
+    </header>
+
+
+
+    <!-- This is menu bar -->
+    <div class="menu-bar">
+        <ul>
+            <li><button class="openbtn" onclick="openNav()"> ☰ </button></li>
+            <li> <a href="index.html"><i class="fa fa-home"></i>HOME</a></li>
+            <li><a href="#"><i class="fa fa-car"></i>PARTS STORE</a></li>
+            <li><a href="#"><i class="fa fa-camera"></i>GALLERY</a></li>
+            <li><a href="#"><i class="fa fa-phone"></i>CONTACT US</a></li>
+            <li><a href="#"><i class="fa fa-users"></i>ABOUT US</a>
+            </li>
+            <li><a href="#"><i class="fa fa-clone"></i>SERVISES</a>
+                <!-- <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">CARS FOR SALE</a></li>
+                        <li><a href="#">TECHNICAL SUPPORT</a></li>
+                        <li><a href="#">LINKS</a></li>
+                        <li><a href="#">HISTORY</a></li>
+                        <li><a href="#">BUYERS GUIDE</a></li>
+                    </ul>
+                </div> -->
+            </li>
+            <li><a href="#"><i class="fa fa-calendar"></i>EVENTS</a></li>
+            <li><a href="#"><i class="fa fa-newspaper-o"></i>NEWS</a></li>
+        </ul>
+        </div>
+    
+    <!--side panel-->
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">History</a>
+            <a href="#">Technical Service</a>
+            <a href="#">Links</a>
+            <a href="#">Cars for sale</a>
+            <a href="#">Buyers Guide</a>
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+          }
+          </script>
+
+
+
+
+    <!-- MAIN (Center website) -->
+    <div class="container">
+        <div class="about_us">
+            <h1>We Always care About Our Valuable Customers </h1>
+            
+           
+        </div>
+    
+</div>
+    <div id="about_definition">
+        <p> we are MGBD Parts & Services, we are leading automobile partshop in the country who specialized in Rover p6 Cars. The P6 was announced on 9 October 1963,[4] just before the Earls Court Motor Show. 
+            The vehicle was marketed first as the Rover 2000 and was a complete "clean sheet" design intended to appeal to a larger 
+            number of buyers than earlier models such as the P4 it replaced. Rover had identified a developing market between the
+             standard '1.5-litre' saloon car class (such as the Ford Consul and the Singer Gazelle) and the accepted 'three-litre' 
+             large saloon cars.
+        </p>
+    </div><br><br>
+
+
+   <!-- cards -->
+   <div class="container1">
+    <div class="column active">
+      <div class="content">
+       <h1>1</h1>
+        <div class="box">
+          <h2>PARTS BUYERS</h2>
+          <p>We offer quality parts and service to value our customer needs and we have the quality and genuine parts out there in the market.</p>
+             <button class="button1">See More</button>
+        </div>
+      </div>
+      <div class ="bg bg1"></div>
+    </div>
+  
+    <div class="column">
+        <div class="content">
+          <h1>2</h1>
+          <div class="box">
+            <h2>VEHICLE OWNERS</h2>
+            <p>Vehicle owners can gain their knowledge about their Rover p6 vehicle through our knowledge guide. It help vehicle owners keep awy from immediate runouts of their vehicle parts.</p>
+               <button class="button2">See More</button>
+          </div>
+        </div>
+        <div class ="bg bg2"></div>
+      </div>
+  
+      <div class="column">
+          <div class="content">
+            <h1>3</h1>
+            <div class="box">
+              <h2>VEHICLE SELLERS</h2>
+              <p>Now you can easily sell your Rover P6 car without any problem at any time you want</p>
+                 <button class="button3">See More</button>
+            </div>
+          </div>
+          <div class ="bg bg3"></div>
+        </div>
+        <div class="column">
+            <div class="content">
+              <h1>4</h1>
+              <div class="box">
+                <h2>ROVER P6 COMMUNITY</h2>
+                <p>You can get event details news and all the updates about Rover P6 cars through us</p>
+                  <button class="button4">See More</button>
+              </div>
+            </div>
+            <div class ="bg bg4"></div>
+          </div>
+  </div>
+  
+  <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+    $(document).on('mouseover', '.container1 .column', function(){
+      $(this).addClass('active').siblings().removeClass('active')
+  });
+  </script>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class=footer-main-div >
+
+        <div class="footer-social-icons">
+        <ul>
+            <li><a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" target="blank"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#" target="blank"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+        </div>
+
+       <div class="footer-menu-one">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">USER ACCOUNT</a></li>
+                </ul>
+            </div> 
+        
+
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>Dsigned by: <a href="#">GroupNO:20 Since 2020</a></p>
+        </div>
+</div>
+
+  </body>
+  </html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+	
+	<link rel="stylesheet" href="../css/new.css">
+	<link rel="stylesheet" href="../css/gallery.css">
+	
+	<script src="../js/gallery.js"></script>
+
+    
+<!--font Awesome cdn-->
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"/>
+
+
+    <!--bootstrap css---
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	->
+
+
+</head>
+<body> 
+
+    <!--bootstrap js----
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	-->	
+
+<!--<div class="nav-bar">
+	<div class="nav-menu">
+		<i class="fas fa-bars button"></i>
+	</div>
+	<div class="social-bar">
+		<i class="fab fa-facebook button"></i>
+		<i class="fab fa-twitter button"></i>
+		<i class="fab fa-instagram button"></i>
+		<i class="fab fa-pinterest-p button"></i>
+	</div>
+
+</div>-->
+
+<div class="page" id="home">
+	<div class="showcaseHome">
+		<img src="../Upload/cus1.jpg">
+	</div>
+	<div id="logo">
+		<p class="light-logo">CURATED ASSET</p>
+		<p class="strong-logo">COLLECTION</p>
+
+	</div>
+
+	<div class="arrow-btn" onclick="showGallery(true);">
+		<i class="fas fa-chevron-down button"></i>
+	</div>
+
+</div>
+
+<div id="gallery" class="page">
+	<div id="logo-gallery"> 
+	<!--<p class="strong-logo" onclick="showGallery(false);">JENNY DOE</p> -->
+	</div>
+
+	<div id="slide" class="slideshow">  
+		<p class="strong-logo" onclick="showGallery(false);">COLLECTION</p> 
+
+		<!----image cards------------>
+		<div class="card">
+			<a href="../index/rsa_gallery.html">
+			<img src="../Upload/park3.jpg" alt="Avatar" style="width:100%"></a>
+			<div class="container">
+			  <h4><b>RSA National</b></h4>
+			  <h4><b>2014</b></h4>
+			</div>
+		  </div>
+
+
+		<div class="card">
+			<a href="../index/50years_gallery.html">
+			<img src="../Upload/park1.jpg" alt="Avatar" style="width:100%"></a>
+			<div class="container">
+			  <h4><b>Autumn Road</b></h4>
+			  <h4><b>Run 2014</b></h4>
+			</div>
+		  </div>
+
+
+		<!--<div class="card">
+			<img src="../Upload/cus4.jpg">
+		</div>-->
+		<div class="card">
+			<img src="../Upload/cus4.jpg" alt="Avatar" style="width:100%">
+			<div class="container">
+			  <h4><b>50 Years</b></h4>
+			  <h4><b>of P6</b></h4>
+			</div>
+		  </div>
+
+		  <div class="card">
+			<img src="../Upload/rsa5.jpg" alt="Avatar" style="width:100%">
+			<div class="container">
+			  <h4><b>Customers</b></h4>
+			  <h4><b>Cars</b></h4>
+			</div>
+		  </div>
+
+		  <div class="card">
+			<img src="../Upload/years1.jpg" alt="Avatar" style="width:100%">
+			<div class="container">
+			  <h4><b>PC NEC Show</b></h4>
+			  <h4><b>2014</b></h4>
+			</div>
+		  </div>
+
+
+	</div>
+	<div class="buttons">
+		<i class="fas fa-chevron-left button"></i>
+		<i class="fas fa-chevron-right button"></i>
+
+	</div>
+</div>
+</body>
+</html>

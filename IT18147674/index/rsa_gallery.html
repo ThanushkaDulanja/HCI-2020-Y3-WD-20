@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSA National 2014</title>
+
+    <!--bootstrap css--
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    -->
+
+<!--font Awesome cdn-->
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../css/specific_gallery.css">
+<script src="../js/rsa_gallery_page.js"></script>
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!--bootstrap js--
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    -->
+   
+<!--This is header-->
+<header>
+    <img class="logo" src ="../Upload/logo.png" alt="loading Logo.." href="#"/>
+
+    <div class="headDetails">
+    <h1 class="header-title"> <b> MGBD Parts & Services </b> </h1>
+   <!----<button class="button1">Login</button>
+    <button class="button2">Sign up</button>-->
+    </div>
+</header>
+
+
+
+<!-- This is menu bar -->
+<div class="menu-bar">
+    <ul>
+        <li><button class="openbtn" onclick="openNav()"> ☰ </button></li>
+        <li> <a href="#"><i class="fa fa-home"></i>HOME</a></li>
+        <li><a href="#"><i class="fa fa-car"></i>PARTS STORE</a></li>
+        <li><a href="../index/gallery.html"><i class="fa fa-camera"></i>GALLERY</a></li>
+        <li><a href="#"><i class="fa fa-phone"></i>CONTACT US</a></li>
+        <li><a href="../index/aboutus.html"><i class="fa fa-users"></i>ABOUT US</a>
+        </li>
+        <li><a href="#"><i class="fa fa-clone"></i>SERVISES</a>
+            <!-- <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">CARS FOR SALE</a></li>
+                    <li><a href="#">TECHNICAL SUPPORT</a></li>
+                    <li><a href="#">LINKS</a></li>
+                    <li><a href="#">HISTORY</a></li>
+                    <li><a href="#">BUYERS GUIDE</a></li>
+                </ul>
+            </div> -->
+        </li>
+        <li><a href="#"><i class="fa fa-calendar"></i>EVENTS</a></li>
+        <li><a href="#"><i class="fa fa-newspaper-o"></i>NEWS</a></li>
+    </ul>
+    </div>
+
+<!--side panel-->
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">History</a>
+        <a href="#">Technical Service</a>
+        <a href="#">Links</a>
+        <a href="#">Cars for Sale</a>
+        <a href="#">Buyers Guide</a>
+      </div>
+
+      <script>
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+      </script>
+
+
+
+
+
+   <div class="container">
+      <div class="navbar">
+          
+          <nav>
+              <!--<ul>
+                  <li>
+                      <a href="/#">Home</a>
+                  </li>
+                  <li>
+                      <a href="/#">Office</a>
+                  </li>
+                  <li>
+                      <a href="/#">Hotels</a>
+                  </li>
+                  <li>
+                      <a href="/#">Contact Us</a>
+                  </li>
+              </ul>-->
+          </nav>
+          
+
+
+
+      </div>
+      <div class="row">
+          <div class="col">
+              <div class="text-box">
+                  <h3>Hello, what are you looking for?</h3>
+                  <h2> CURATED ASSET <br>COLLECTION <br> <b class="rsa-title">RSA National 2014 </b> </h2>
+              </div>
+
+              <img src="../Upload/circle.png" alt="circle" class="small-icon1">
+              <img src="../Upload/circle.png" alt="circle" class="small-icon2">
+              <img src="../Upload/square.png" alt="square" class="small-icon3">
+
+          </div>
+          <div class="col">
+              <div class="gallery-box">
+                  <img src="../Upload/park2.jpg" alt="pic2" id="gallery">
+                  <ul>
+                      <li class="btn active">01</li>
+                      <li class="btn">02</li>
+                      <li class="btn">03</li>
+                      <li class="btn">04</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <img src="../Upload/circle.png" alt="circle" class="small-icon4">
+      <img src="../Upload/square.png" alt="square" class="small-icon5">
+
+  </div>
+
+ 
+  <script src="../js/rsa_gallery_page.js"></script>
+
+
+
+  <div class="footer">
+    <div class=footer-main-div >
+
+        <div class="footer-social-icons">
+        <ul>
+            <li><a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" target="blank"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#" target="blank"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+        </div>
+
+       <div class="footer-menu-one">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="../index/aboutus.html">ABOUT US</a></li>
+                    <li><a href="#">USER ACCOUNT</a></li>
+                </ul>
+            </div>
+
+
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>Dsigned by: <a href="#">GroupNO:20 Since 2020</a></p>
+        </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+/* nav bar styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-image: url(p6car2.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    font-family: sans-serif;
+}
+.menu-bar
+{
+    background: rgb(32, 184, 235);
+    text-align: center;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+
+}
+.menu-bar ul li
+{
+    font-size: 13px;
+    width: 144px;
+     margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.active, .menu-bar ul li:hover
+{
+    background: #3d7ba1;
+    border-radius: 3px;
+    text-align: center;
+}
+.menu-bar .fa
+{
+     margin-right: 8px;
+}
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background:rgb(32, 184, 235);
+    margin-top: 15px;
+    margin-left: -15;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+    
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: black;
+}
+
+/* h1
+{
+    font-family:sans-serif 'Segoe UI', Tahoma, Geneva, Verdana;
+    padding: 150px;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(218, 158, 81);
+
+    
+} */
+
+/* side bar*/
+
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: rgb(32, 184, 235);
+    
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:rgb(32, 184, 235);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background: #3d7ba1;
+    
+    
+  }
+  
+
+  /* Header */
+
+ 
+  header {
+   
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: rgb(0, 0, 0);  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(images/header2.jpg);
+    height: 200px;
+  }
+
+  header .logo{
+    float: left;
+    height: 120px;
+    width: 120px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+
+.button1 , .button2 {
+  background-color: #f94909;
+  border: none;
+  color: white;
+  padding: 10px 61px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.headDetails h1{
+  padding:20px;
+}
+  

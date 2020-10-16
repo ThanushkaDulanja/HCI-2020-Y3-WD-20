@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!--This is header-->
+    <header>
+        <img class="logo" src ="images/logo.png" alt="loading Logo.." href="#"/>
+
+        <div class="headDetails">
+        <h1>MGBD Parts & Services </h1>
+        <button class="button1">Login</button>
+        <button class="button2">Sign up</button>
+        </div>
+    </header>
+
+
+
+    <!-- This is menu bar -->
+    <div class="menu-bar">
+        <ul>
+            <li><button class="openbtn" onclick="openNav()"> ☰ </button></li>
+            <li> <a href="#"><i class="fa fa-home"></i>HOME</a></li>
+            <li><a href="#"><i class="fa fa-car"></i>PARTS STORE</a></li>
+            <li><a href="#"><i class="fa fa-camera"></i>GALLERY</a></li>
+            <li><a href="#"><i class="fa fa-phone"></i>CONTACT US</a></li>
+            <li><a href="#"><i class="fa fa-users"></i>ABOUT US</a>
+            </li>
+            <li><a href="#"><i class="fa fa-clone"></i>SERVISES</a>
+                <!-- <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">CARS FOR SALE</a></li>
+                        <li><a href="#">TECHNICAL SUPPORT</a></li>
+                        <li><a href="#">LINKS</a></li>
+                        <li><a href="#">HISTORY</a></li>
+                        <li><a href="#">BUYERS GUIDE</a></li>
+                    </ul>
+                </div> -->
+            </li>
+            <li><a href="#"><i class="fa fa-calendar"></i>EVENTS</a></li>
+            <li><a href="#"><i class="fa fa-newspaper-o"></i>NEWS</a></li>
+        </ul>
+        </div>
+    
+    <!--side panel-->
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+          }
+          </script>

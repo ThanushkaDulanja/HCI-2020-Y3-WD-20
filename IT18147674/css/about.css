@@ -1,0 +1,159 @@
+.jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+    background-color: black;
+    position: relative;
+    top: -2px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .title1{
+    color: #ffffff;
+  }
+
+  .title2{
+    color: #ffffff;
+  }
+
+  .title3{
+    color: #ffffff;
+  }
+  
+  .sub1{
+    color: #ffffff;
+  }
+  
+  .sub2{
+    color: #ffffff;
+  }
+
+  .sub3{
+    color: #ffffff;
+  }
+
+  .sub4{
+    color: #ffffff;
+  }
+
+  .sub5{
+    color: #ffffff;
+  }
+
+  .sub6{
+    color: #ffffff;
+  }
+
+
+
+
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+
+  .abt{
+      position: relative;
+      left: -75px;
+      font-size: 20px;
+  }
+
+  .details{
+    background-color: #000000;
+    position: relative;
+    width: 1345px;
+    height: 268px;
+    top: -1px;
+   
+  }
+
+  .one{
+    background-color: #000000;
+    position: relative;
+    width: 25%;
+    height: 55%;
+    left: 6%;
+    top: 35px;
+  }
+
+  .two{
+    background-color: #000000;
+    position: relative;
+    width: 25%;
+    height: 55%;
+    left: 37%;
+    top: -124px;
+  }
+
+  .three{
+    background-color: #000000;
+    position: relative;
+    width: 25%;
+    height: 55%;
+    left: 67%;
+    top: -288px;
+  }
+
+  .i1{
+      position: relative;
+      left: 110px;
+      color: #ffffff;
+  }
+
+  
+  .i2{
+    position: relative;
+    left: 130px;
+    color: #ffffff;
+}
+
+
+.i3{
+    position: relative;
+    left: 140px;
+    color: #ffffff;
+}
+
+.des1{
+    position: relative;
+    left: 70px;
+    color: #ffffff;
+}
+
+.des2{
+    position: relative;
+    left: 110px;
+    color: #ffffff;
+}
+
+.des3{
+    position: relative;
+    left: 90px;
+    
+    color: #ffffff;
+}
+
+#myCarousel{
+  background-color: rgb(55, 168, 168);
+}
+
+.current{
+  color: darkblue;
+}
+.header-title{
+  font-size: 50px;
+}

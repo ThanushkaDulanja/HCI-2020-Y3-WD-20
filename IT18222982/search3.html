@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<title>Search_Page</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+.w3-sidebar a {font-family: "Poppins", sans-serif}
+.mySlides {display: none}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Poppins", sans-serif;}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.float-immg{float: left; 
+              margin-right: 10px; 
+              margin-bottom: 5px; 
+              border: solid black 1px; 
+              padding: 2px;}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<body>
+  <header>
+    <img class="logo" src ="images/logo.png" alt="loading Logo.." href="#"/>
+
+    <div class="headDetails">
+    <h1>MGBD Parts & Services </h1>
+   
+    </div>
+</header>
+
+
+
+<!-- This is menu bar -->
+<div class="menu-bar">
+    <ul>
+        <li><button class="openbtn" onclick="openNav()"> ☰ </button></li>
+        <li> <a href="#"><i class="fa fa-home"></i>HOME</a></li>
+        <li><a href="#"><i class="fa fa-car"></i>PARTS STORE</a></li>
+        <li><a href="#"><i class="fa fa-camera"></i>GALLERY</a></li>
+        <li><a href="#"><i class="fa fa-phone"></i>CONTACT US</a></li>
+        <li><a href="#"><i class="fa fa-users"></i>ABOUT US</a>
+        </li>
+        <li><a href="#"><i class="fa fa-clone"></i>SERVISES</a>
+            <!-- <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">CARS FOR SALE</a></li>
+                    <li><a href="#">TECHNICAL SUPPORT</a></li>
+                    <li><a href="#">LINKS</a></li>
+                    <li><a href="#">HISTORY</a></li>
+                    <li><a href="#">BUYERS GUIDE</a></li>
+                </ul>
+            </div> -->
+        </li>
+        <li><a href="#"><i class="fa fa-calendar"></i>EVENTS</a></li>
+        <li><a href="#"><i class="fa fa-newspaper-o"></i>NEWS</a></li>
+    </ul>
+    </div>
+
+<!--side panel-->
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">HISTORY</a>
+        <a href="#">TECHNICAL SERVICES</a>
+        <a href="#">LINKS</a>
+        <a href="#">CAR FOR SALE</a>
+        <a href="#">BUYERS GUIDE</a>
+      </div>
+<br>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Categories
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Bearings</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Body & Trim</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Chromework</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Electrical</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Cooling</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Dash panel</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Exhaust</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Final Drive</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Light Bulbs</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Final Drive</a></li>
+          <li class="divider"></li>
+          <li><a href="#">HIF6 Carburetter parts</a></li>
+          <li class="divider"></li>
+          <li><a href="#">HS8 Carburetter parts</a></li>
+          <li class="divider"></li>
+          <li><a href="#">HD8 Carburetter parts</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Glass</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Ignition</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Lights</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Paint</a></li>
+          <li><a href="#">Cooling</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Dash panel</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Exhaust</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Final Drive</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Light Bulbs</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Final Drive</a></li>
+          <li class="divider"></li>
+          <li><a href="#">HIF6 Carburetter parts</a></li>
+          <li class="divider"></li>
+          <li><a href="#">HS8 Carburetter parts</a></li>
+          <li class="divider"></li>
+          <li><a href="#">HD8 Carburetter parts</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Glass</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Ignition</a></li>
+        </ul>
+      </div>
+  
+ 
+
+  <div style="margin-left:340px;margin-right:40px">
+  <div>
+    <div class="w3-container" id="contact" style="margin-top:75px">
+   
+        <form target="_blank">
+            <h1>Product Search</h1>
+            <div class="form-group">
+                <label for="pnumber">Product Number:
+              </label><br>
+              <input class="form-control" type="number" id="quantity" name="quantity" min="1" max="5">
+              <div class="form-group">
+                <label for="pname">Product Name:
+              </label>
+                 <select id="pname" name="pname" type="search" class="form-control">
+                     <option value="v1">FRONT BRAKE DISC, GIRLING 2000, 2200 {1966-1977) [NEW]</option>
+                     <option value="v2">HERITAGE CLASSIC OILS 20W50 5LT</option>
+                     <option value="v3">HEATER MATRIX P6 2000 2200 3500</option>
+                     <option value="v4">PENRITE ATF-33 4LT</optio>
+                     <option value="v5">PENRITE MILD EP 1Lt</option>
+                     <option value="v6">SPECIAL SCREW FOR FIXING LENS TO REAR LAMP UNIT STAINLESS STEEL</option>
+                     <option value="v7">OUTER HEADLAMP HALOGEN H4 60W55W UPGRADE KIT WITH BULBS</option>
+                     <option value="v8">REAR BRAKE PADS FOR 2000, 2200, 3500 WITH GIRLING CALIPERS</option>
+                     <option value="v9">GEARBOX REMOTE SHAFT REFURBISH SERVICE</option>
+                 </select></div>
+                 <div class="form-group">
+                 <label for="spname">Sub Product Name:
+              </label><br>
+                 <select id="spname" name="spname" type="search" class="form-control">
+                     <option value="sv1">BULB 12V 4W, NUMBER PLATE LAMP & FRONT SIDE LAMP</option>
+                     <option value="sv2">Fully reconditioned WATER PUMP with gasket, for the Rover P6 2000 & 2200 (LONG NOSE)</option>
+                     <option value="sv3">Fully reconditioned WATER PUMP with gasket, SHORT NOSE 2000</option>
+                     <option value="sv4">HIF6 CARB THROTTLE SPINDLE BUSH [PAIR]</option>
+                     <option value="sv5">CHROMED PETROL FILLER CAP RE-CHROMING SERVICE</option>
+                     <option value="sv6">3500 BRAKE SERVO CYLINDER MACHINING & STAINLESS SLEEVING</option>
+                     <option value="sv7">HIF6 CARB THROTTLE SPINDLE KIT</option>
+                     <option value="sv8">MGF FRONT BRAKE PADS (UPTO 2001)</option>
+                     <option value="sv9">ALTERNATOR DRIVE BELT FOR MGF WITH AIRCON [1995-2002]</option>
+                     <option value="sv10">MGF HYDRAGAS SUSPENSION REFILL/TOP UP SERVICE</option>
+                 </select></div>
+                 <div class="form-group">
+                 <label for="sby">Sort By:
+              </label><br>
+                  <select id="sby" name="sby" type="search" class="form-control">
+                      <option value="sb1">Relavance</option>
+                      <option value="sb2">Name</option>
+                      <option value="sb3">Price:Ascending</option>
+                      <option value="sb4">Price:Descending</option>  
+                  </select></div>
+                  <div class="form-group">
+                  <label for="rpage">Result Per Page:
+              </label><br>
+                      <select id="rp" name="rp" type="search" class="form-control">
+                          <option value="rp1">3</option>
+                          <option value="rp2">6</option>
+                          <option value="rp3">9</option>
+                          <option value="rp4">12</option>
+                      </select></div>
+              
+                
+                      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">Search</a></p>
+        </form>  
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+     
+     
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>6 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+    <div class="w3-third w3-margin-bottom">
+      <img src="images/s1.jpg" alt="s2" style="width:100%" class="float-immg">
+      <div class="w3-container w3-white">
+        <p><b>FRONT BRAKE DISC, GIRLING 2000, 2200 {1966-1977) [NEW]</b></p>
+        <p class="w3-opacity">10 in stock,can be shipped within 3 days<br>Delivery weight: 5,300 g</p>
+       
+        <p><b>£70.00</b></p>
+        <p class="w3-opacity">Price, plus <a href="http://shop.roverp6cars.com/epages/es146747.sf/en_GB/?ObjectPath=Categories/CustomerInformation&ViewAction=ViewPopup" target="_blank"><u>delivery</u></a></p>
+        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Now</button>
+      </div>
+    </div>
+   
+      <div class="w3-third w3-margin-bottom">
+        <img src="images/s2.jpg" alt="s2" style="width:100%" class="float-immg">
+        <div class="w3-container w3-white">
+          <p><b>HERITAGE CLASSIC OILS 20W50 5LT</b></p>
+          <p class="w3-opacity">12 in stock,can be shipped within 3 days<br>Delivery weight: 6 kg<br></p>
+         
+          <p><b>£20.50</b></p>
+          <p class="w3-opacity">Price, plus <a href="http://shop.roverp6cars.com/epages/es146747.sf/en_GB/?ObjectPath=Categories/CustomerInformation&ViewAction=ViewPopup" target="_blank"><u>delivery</u></a></p>
+          <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Now</button>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <img src="images/s3.jpg" alt="s2" style="width:100%" class="float-immg">
+        <div class="w3-container w3-white">
+          <p><b>BRAKE PADS for the front later Girling Type Calipers on a Rover P6 2000 or 2200 (1970 - 1977)</b></p>
+          <p class="w3-opacity">10 in stock,can be shipped within 2 days<br>Delivery weight: 1,100 g<br></p>
+         
+          <p><b>£20.00</b></p>
+          <p class="w3-opacity">Price, plus <a href="http://shop.roverp6cars.com/epages/es146747.sf/en_GB/?ObjectPath=Categories/CustomerInformation&ViewAction=ViewPopup" target="_blank"><u>delivery</u></a></p>
+          <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Now</button>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <img src="images/s4.jpg" alt="s2" style="width:100%" class="float-immg">
+        <div class="w3-container w3-white">
+          <p><b>BRAKE MASTER CYLINDER REPAIR KIT 2000, 2200, 3500</b></p>
+          <p class="w3-opacity">10 in stock,can be shipped within 3 days<br>Delivery weight: 150 g<br></p>
+         
+          <p><b>£12.00</b></p>
+          <p class="w3-opacity">Price, plus <a href="http://shop.roverp6cars.com/epages/es146747.sf/en_GB/?ObjectPath=Categories/CustomerInformation&ViewAction=ViewPopup" target="_blank"><u>delivery</u></a></p>
+          <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Now</button>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <img src="images/s5.jpg" alt="s2" style="width:100%" class="float-immg">
+        <div class="w3-container w3-white">
+          <p><b>PENRITE MILD EP 1Lt</b></p>
+          <p class="w3-opacity">10 in stock,can be shipped within 3 days<br>Delivery weight: 1,000 g<br></p>
+         
+          <p><b>£9.00</b></p>
+          <p class="w3-opacity">Price, plus <a href="http://shop.roverp6cars.com/epages/es146747.sf/en_GB/?ObjectPath=Categories/CustomerInformation&ViewAction=ViewPopup" target="_blank"><u>delivery</u></a></p>
+          <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Now</button>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <img src="images/s6.jpg" alt="s2" style="width:100%" class="float-immg">
+        <div class="w3-container w3-white">
+          <p><b>PENRITE ATF-33 4LT</b></p>
+          <p class="w3-opacity">20 in stock,can be shipped within 3 days<br>Delivery weight: 4,000 g<br></p>
+         
+          <p><b>£30.00</b></p>
+          <p class="w3-opacity">Price, plus <a href="http://shop.roverp6cars.com/epages/es146747.sf/en_GB/?ObjectPath=Categories/CustomerInformation&ViewAction=ViewPopup" target="_blank"><u>delivery</u></a></p>
+          <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Now</button>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+    </div>
+  </div>
+  <!-- Footer -->
+ <footer>
+  <div class="footer">
+    <div class=footer-main-div >
+
+        <div class="footer-social-icons">
+        <ul>
+            <li><a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" target="blank"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#" target="blank"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+        </div>
+
+       <div class="footer-menu-one">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">USER ACCOUNT</a></li>
+                </ul>
+            </div> 
+        
+
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>Dsigned by: <a href="#">GroupNO:20 Since 2020</a></p>
+        </div>
+</div>
+
+ </footer>
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+          }
+</script>
+
+</body>
+</html>

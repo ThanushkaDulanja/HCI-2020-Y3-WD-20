@@ -1,0 +1,121 @@
+
+/* Name: T.D. Balasooriya */
+/* Reg. No: IT18212150 */
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-size: 100% 100%;   
+    
+}
+a{
+    text-decoration: none;
+    outline:none;
+}
+.footer-main-div{
+    width: 100%;
+    height:auto;
+    margin:auto;
+    background: #272727;
+    padding: 60px 0px;
+
+    
+}
+.footer-social-icons{
+    width:100%;
+    height:auto;
+    margin:auto;
+}
+.footer-social-icons ul{
+    margin: 0px;
+    padding:0px;
+    text-align: center;
+}
+.footer-social-icons ul li{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    margin:0px 10px;
+    border-radius: 100%;
+    background: #F94909;
+}
+.footer-social-icons ul li a{
+    color: #272727;
+    font-size:25px;
+    display:block;
+    
+
+}
+.footer-social-icons ul li a i
+{
+    line-height:50px;
+}
+
+.footer-social-icons ul li a:hover{
+
+   
+    width: 50px; 
+    height:50px;
+    color: #F94909;
+    background:#bdbdbd;
+    border-radius:100%;
+
+  
+    
+}
+
+/*styles for footer menu one*/
+.footer-menu-one{
+    width:100%;
+    height: auto;
+    margin: auto;
+    margin-top:25px;
+
+}
+.footer-menu-one ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-menu-one ul li{
+    display:inline-block;
+    margin: 0px 10px;
+}
+.footer-menu-one ul li a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:15px;
+    font-weight: 600;
+    color:#fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer-menu-one ul li a:hover{
+    color: #dbdbdb;
+}
+
+
+
+
+.footer-bottom{
+    width: 100%;
+    height:auto;
+    margin:auto;
+    background: #F94909;
+    padding: 10px;
+}
+.footer-bottom p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:13px;
+    text-align:center;
+    color: black;
+    letter-spacing: 1px;
+}
+.footer-bottom p a{
+    color: #fff;
+    font-size:12px;
+}
+.footer-bottom p a:hover{
+    color: #bbddbb;
+} 
